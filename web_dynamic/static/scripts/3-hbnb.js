@@ -25,7 +25,7 @@ $(document).ready(function () {
   $.ajax({
     type: 'POST',
     url: 'http://127.0.0.1:5001/api/v1/places_search/',
-    data: '{}',
+    data: listCheck,
     dataType: 'json',
     contentType: 'application/json',
     success: function (places) {

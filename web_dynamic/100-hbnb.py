@@ -11,11 +11,11 @@ import uuid
 app = Flask(__name__)
 
 
-@app.route('/3-hbnb', strict_slashes=False)
-def hbnb_filterss():
+@app.route('/100-hbnb', strict_slashes=False)
+def hbnb_filters1():
     """Render template with states
     """
-    path = '3-hbnb.html'
+    path = '100-hbnb.html'
     states = storage.all(State)
     amenities = storage.all(Amenity)
     places = storage.all(Place)
